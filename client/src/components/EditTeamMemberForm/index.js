@@ -134,16 +134,16 @@ const EditTeamMemberForm = (props) => {
     <Container>
       <Form onSubmit={handleFormSubmit}>
         <Header size="medium">Contact Info</Header>
-        <Form.Group>
-          <Form.Field
-            label="Name:"
+        <Form.Group widths="equal">
+          <Form.Input
+            fluid label="Name:"
             name="name"
             control="input"
             type="text"
             value={inputs.name}
             onChange={handleChange}
             required
-          ></Form.Field>
+          ></Form.Input>
           <Form.Field
             label="Email:"
             name="email"
