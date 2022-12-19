@@ -135,7 +135,7 @@ const EditTeamMemberForm = (props) => {
       <Form onSubmit={handleFormSubmit}>
         <Header size="medium">Contact Info</Header>
         <Form.Group widths="equal">
-          <Form.Input
+          <Form.Field
             fluid label="Name:"
             name="name"
             control="input"
@@ -143,15 +143,15 @@ const EditTeamMemberForm = (props) => {
             value={inputs.name}
             onChange={handleChange}
             required
-          ></Form.Input>
-          <Form.Input
+          ></Form.Field>
+          <Form.Field
             fluid label="Email:"
             name="email"
             control="input"
             type="text"
             value={inputs.email || ""}
             onChange={handleChange}
-          ></Form.Input>
+          ></Form.Field>
           <Form.Field
             label="Phone Number:"
             name="phoneNumber"

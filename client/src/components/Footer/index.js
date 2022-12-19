@@ -6,12 +6,10 @@ const Footer = () => {
     backgroundColor: "white",
     display: "flex",
     justifyContent: "space-between",
-    // padding: "20px"
   };
 
   return (
     <>
-
       <Message style={footerStyle}>
         <Message.Content>
           <Icon name="copyright outline" />
