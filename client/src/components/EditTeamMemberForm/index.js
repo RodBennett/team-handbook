@@ -170,7 +170,7 @@ const EditTeamMemberForm = (props) => {
           ></Form.Field>
         </Form.Group>
 
-        <Divider></Divider>
+        {/* <Divider></Divider> */}
 
         <Header size="medium">Emergency POC</Header>
         <Form.Group widths="equal">

@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: 622px) {
-  .ui.form {
+  .ui.form.input {
     width: 100%
   }
   .ui.cards {

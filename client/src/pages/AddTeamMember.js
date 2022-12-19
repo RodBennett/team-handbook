@@ -73,24 +73,24 @@ const AddTeamMember = () => {
     <Container>
       <Form onSubmit={handleFormSubmit}>
         <Header>Contact Info</Header>
-        <Form.Group>
-          <Form.Field
-            label="Name:"
+        <Form.Group widths="equal">
+          <Form.Input
+            fluid label="Name:"
             name="name"
             control="input"
             type="text"
             value={inputs.name}
             onChange={handleChange}
             required
-          ></Form.Field>
-          <Form.Field
-            label="Email:"
+          ></Form.Input>
+          <Form.Input
+            fluid label="Email:"
             name="email"
             control="input"
             type="text"
             value={inputs.email || ""}
             onChange={handleChange}
-          ></Form.Field>
+          ></Form.Input>
           <Form.Field
             label="Phone Number:"
             name="phoneNumber"
@@ -108,10 +108,10 @@ const AddTeamMember = () => {
             onChange={handleChange}
           ></Form.Field>
         </Form.Group>
-        <Divider></Divider>
+        {/* <Divider></Divider> */}
 
         <Header>Emergency POC</Header>
-        <Form.Group>
+        <Form.Group widths="equal">
           <Form.Field
             label="Name:"
             name="pocName"
