@@ -144,14 +144,14 @@ const EditTeamMemberForm = (props) => {
             onChange={handleChange}
             required
           ></Form.Input>
-          <Form.Field
-            label="Email:"
+          <Form.Input
+            fluid label="Email:"
             name="email"
             control="input"
             type="text"
             value={inputs.email || ""}
             onChange={handleChange}
-          ></Form.Field>
+          ></Form.Input>
           <Form.Field
             label="Phone Number:"
             name="phoneNumber"
@@ -173,7 +173,7 @@ const EditTeamMemberForm = (props) => {
         <Divider></Divider>
 
         <Header size="medium">Emergency POC</Header>
-        <Form.Group>
+        <Form.Group widths="equal">
           <Form.Field
             label="Name:"
             name="pocName"
